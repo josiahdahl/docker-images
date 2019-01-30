@@ -22,5 +22,7 @@ RUN apk --no-cache add --virtual libmcrypt-dev freetype-dev libxml2-dev \
 RUN mkdir /var/www \
     && chown -R cli:cli /var/www
 
+USER cli
+
 WORKDIR /var/www
 
